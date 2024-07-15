@@ -7,3 +7,142 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* Shared styles */
+.display-flex{
+    display: flex;
+}
+/* dark02 */
+.text-gray {
+    color: rgb(66, 66, 66);
+}
+/* dark03 */
+.text-light-gray{
+   color: rgb(114, 114, 114);
+}
+
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.text-primary{
+    color: #ff900e;
+}
+.btn-primary{
+    width: 180px;
+    height: 64px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* header styles */
+
+/* navbar related styles */
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    color: rgb(19, 19, 19);
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* padding: 0 228px; */
+}
+
+/* banner related style */
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-top: 60px;
+}
+
+/* team and featured related styles */
+.teams{
+    align-items: center;
+    margin-top: 85px;
+    /* margin: 0 auto; */
+    /* margin-left: 301px;
+    margin-right: 301px; */
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    margin-left: 130px;
+}
+
+.our-features{
+    margin-left: 130px;
+    margin-right: 100px;
+}
+
+
+#quick-list{
+    font-weight: 500;
+}
+/* Responsive media query */
+@media screen and (max-width : 576px){
+    .navbar, .nav-link, .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-features, .team-img-container{
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width : 576px) and (max-width : 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features,.team-img-container{
+        margin: 20px;
+    
+    }
+}
+

@@ -218,6 +218,15 @@
 .sponsor-companies img{
     filter: grayscale(100%);
 }
+
+/* footer */
+footer{
+    border-radius: 8px;
+}
+.footer-des{
+    padding: 39px 410px;
+    text-align: center;
+}
 /* Responsive media query */
 @media screen and (max-width : 576px){
     .navbar, .nav-link, .teams, .features{
@@ -234,8 +243,12 @@
         gap: 24px;
     }
     #experience-badge{
-        margin-top: -80px;
-        margin-left: 171.5px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .footer-des{
+        text-align: center;
+        padding: 30px;
     }
 }
 
@@ -253,11 +266,15 @@
         gap: 24px;
     }
     #experience-badge{
-        margin-top: -80px;
-        margin-left: 325px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
     .featured-architect img{
         margin-top: -100px;
+    }
+    .footer-des{
+        text-align: center;
+        padding: 70px;
     }
 }
 
